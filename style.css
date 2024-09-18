@@ -1,92 +1,76 @@
-.body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 0 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
 }
 
-.main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-.booking-form {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.booking-form h2 {
-    margin-bottom: 20px;
-}
-
-.booking-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.booking-form input[type="text"],
-.booking-form input[type="date"],
-.booking-form input[type="number"] {
-    width: 100%;
-    padding: 10px;
+header h1 {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.booking-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+nav ul {
+    list-style-type: none;
 }
 
-.booking-form button:hover {
-    background: #555;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px 0;
+    background: #343a40;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 0 10px;
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-    main {
-        padding: 10px;
+    section {
+        margin: 5px;
     }
 }
 
 @media (max-width: 480px) {
-    .booking-form {
-        padding: 10px;
+    header h1 {
+        font-size: 24px;
     }
 
-    .booking-form input[type="text"],
-    .booking-form input[type="date"],
-    .booking-form input[type="number"] {
-        padding: 8px;
+    section h2 {
+        font-size: 20px;
     }
 
-    .booking-form button {
-        padding: 8px 10px;
+    footer {
+        font-size: 12px;
     }
 }
