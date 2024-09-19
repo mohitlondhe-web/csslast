@@ -1,54 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Paradise</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Pet Paradise</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Pet Paradise! We are dedicated to providing the best products and services for your furry friends. Our store offers a wide variety of pets, food, and accessories to keep your pets happy and healthy.</p>
+<main>
+    <section id="dogs">
+        <h2>Dogs</h2>
+        <p>Find your new best friend! We offer a variety of dog breeds.</p>
+        <img src="dog.jpg" alt="Dog" class="responsive">
+    </section>
+    
+    <section id="cats">
+        <h2>Cats</h2>
+        <p>Cuddle up with our selection of adorable cats.</p>
+        <img src="cat.jpg" alt="Cat" class="responsive">
     </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <ul>
-            <li>Dog Food - $25.00</li>
-            <li>Cat Food - $20.00</li>
-            <li>Bird Seeds - $15.00</li>
-            <li>Aquarium Supplies - $30.00</li>
-            <li>Pet Toys - $10.00</li>
-        </ul>
+    <section id="birds">
+        <h2>Birds</h2>
+        <p>Colorful and chirpy, our birds will brighten your day!</p>
+        <img src="bird.jpg" alt="Bird" class="responsive">
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer grooming, training, and pet-sitting services. Our trained staff ensures your pets receive the best care possible.</p>
+    <section id="fishes">
+        <h2>Fishes</h2>
+        <p>Explore our beautiful aquarium fish varieties.</p>
+        <img src="fish.jpg" alt="Fish" class="responsive">
     </section>
-
+    
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Address: 456 Pet Lane, Animal City, CA</p>
-        <p>Email: contact@petparadise.com</p>
-        <p>Phone: (987) 654-3210</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="30">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10" maxlength="300"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Pet Paradise. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+</main>
